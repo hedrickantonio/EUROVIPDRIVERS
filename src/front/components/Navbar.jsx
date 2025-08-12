@@ -10,9 +10,9 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-dark ed-nav">
 			<div className="container-fluid ed-container">
 				{/* Logo a la izquierda */}
-				<a className="navbar-brand ed-logo d-flex align-items-center" href="#">
+				<Link className="navbar-brand ed-logo d-flex align-items-center" to="/">
 					<img src={logoImg} alt="Eurovipdrivers logo" className="ed-logo-img" />
-					<span className="ed-logo-text">Eurovipdrivers</span></a>
+					<span className="ed-logo-text">Eurovipdrivers</span></Link>
 
 				{/* Toggler (solo visible < lg por Bootstrap) */}
 				<button
@@ -35,7 +35,7 @@ export const Navbar = () => {
 						<li className="nav-item"><a className="nav-link" href="#fleet">Fleet</a></li>
 						<li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
 						<li className="nav-item mt-2 mt-lg-0">
-							<a className="btn ed-btn ed-btn--gold ms-lg-2" href="#signin">Sign In</a>
+							<Link className="btn ed-btn ed-btn--gold ms-lg-2" to="signin">Sign In</Link>
 						</li>
 					</ul>
 				</div>
