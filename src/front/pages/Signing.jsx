@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import "../singin.css";
+import userServices from "../services/userServices";
 export const Signin = () => {
 
 
@@ -25,6 +26,7 @@ export const Signin = () => {
     const handleSubmit = e => {
         e.preventDefault();
         console.log("Form submitted", formData);
+        userServices.register(formData).then(data => console.log(data))
 
         if (!formData.email || !formData.password || !formData.confirmPassword) {
             setError("Fill all the required elements");
