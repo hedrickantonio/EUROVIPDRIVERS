@@ -30,10 +30,10 @@ export const Navbar = () => {
 				{/* Menú colapsable */}
 				<div className="collapse navbar-collapse justify-content-end" id="edNavbar">
 					<ul className="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
-						<li className="nav-item"><a className="nav-link" href="#book">Book a Ride</a></li>
+						<li className="nav-item"><a className="nav-link" href="book">Book a Ride</a></li>
 						<li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
-						<li className="nav-item"><a className="nav-link" href="#fleet">Fleet</a></li>
-						<li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+						<li className="nav-item"><a className="nav-link" href="fleet">Fleet</a></li>
+						<li className="nav-item"><a className="nav-link" href="contact">Contact</a></li>
 						<li className="nav-item mt-2 mt-lg-0">
 							<Link className="btn ed-btn ed-btn--gold ms-lg-2" to="signin">Sign In</Link>
 						</li>
